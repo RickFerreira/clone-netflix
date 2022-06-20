@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import Tmdb from "./Tmdb";
 import MovieRow from "./components/MovieRow";
 import './App.css';
+import FeaturedMovie from "./components/FeaturedMovie";
 
 
 export default () => {
   //Pegar a lista de filmes
   const [movieList, setMovieList] = useState([]);
+  const [featuredData, setFeaturedData] = useState(null);
 
   //Quando a tela for carregada usa a função colocada aqui
   useEffect(()=>{
@@ -14,6 +16,14 @@ export default () => {
       //Pegando a lista total
       let list = await Tmdb.getHomeList();
       setMovieList(list);
+
+      //Pegando o featured
+      let originals = list.filter(i=>i.slug === 'originals');
+      let ramdomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
+      let chosen = originals[0].items.results[ramdomChosen];
+      let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
+
+      setFeaturedData(chosenInfo);
     }
 
     loadAll();
@@ -21,6 +31,11 @@ export default () => {
 
   return(
     <div className="page">
+      
+      {featuredData &&
+        <FeaturedMovie item={featuredData} />
+      }
+      
 
       <section className="listas">
         {movieList.map((item, key)=>(
