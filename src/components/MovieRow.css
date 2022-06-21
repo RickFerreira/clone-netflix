@@ -2,11 +2,12 @@
     margin-bottom: 30px;
 }
 .movieRow h2{
-    margin: 0 0 0 30px;
+    font-size: 18px;
+    margin: 0 0 10px 30px;
 }
 .movieRow--listarea{
     overflow-x: hidden;
-    padding-left: 27px;
+    padding-left: 25px;
 }
 .movieRow--list{
     width: 99999999999px;

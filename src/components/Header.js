@@ -18,7 +18,7 @@ export default ({black}) => {
                         </a>
                     </li>
                     <li className="header--li">
-                        <a href="">Início</a>
+                        <a href="/">Início</a>
                     </li> 
                     <li className="header--li">
                         <a href="">Séries</a>
