@@ -1,0 +1,33 @@
+footer{
+    padding-top: 100px;
+    padding-inline: 100px;
+    padding-bottom: 15px;
+}
+footer img{
+    height: 22px;
+}
+footer a{
+    color: grey;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 13px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul{
+    margin-top: 25px;
+    display: inline-block;
+    margin-right: 60px;
+}
+footer li{
+    padding-bottom: 15px;
+    list-style-type: none;
+}
+footer p{
+    margin-right: 30px;
+    display: inline-block;
+    font-size: 14px;
+    opacity: 0.9; 
+}

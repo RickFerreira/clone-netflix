@@ -4,6 +4,7 @@ import MovieRow from "./components/MovieRow";
 import './App.css';
 import FeaturedMovie from "./components/FeaturedMovie";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 export default () => {
@@ -57,12 +58,13 @@ export default () => {
         <FeaturedMovie item={featuredData} />
       }
       
-
       <section className="listas">
         {movieList.map((item, key)=>(
           <MovieRow key={key} title={item.title} items={item.items}/>
         ))}
       </section>
+
+      <Footer />
 
     </div>
   );
