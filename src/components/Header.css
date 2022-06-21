@@ -8,12 +8,56 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    background: linear-gradient(to bottom, black 0%, transparent 100%);  
+    transition: all ease 1s; 
 }
-.header--logo img{
-    height: 150px;
+header.black{
+    background-color:#141414;
 }
+
+.header--navigation{
+    margin-left: -10px;
+}
+
+.header--navigation img{
+    height: 25px;
+    margin-right: 15px;
+}
+
+.header--li {
+    display: inline;
+    margin-right: 15px;
+}
+.header--li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;    
+}
+
+.header--avatar{   
+    padding-right: 30px;
+}
+
 .header--avatar img{
-    height: 50px;
+    margin-left: 15px;
+    height: 40px;
     border-radius: 3px;
 }
+.header--seta img{
+    margin-left: 15px;
+    height: 10px;
+    margin-bottom: 13px;
+}
+.header--sino img{
+    height: 25px;
+    margin-bottom: 4px;
+}
+.header--lupa img{
+    height: 20px;
+    margin-bottom: 7px;
+}
+.header--infantil img{
+    height: 21px;
+    margin-bottom: 6px;
+}
+

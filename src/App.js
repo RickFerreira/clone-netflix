@@ -10,6 +10,7 @@ export default () => {
   //Pegar a lista de filmes
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(false);
 
   //Quando a tela for carregada usa a função colocada aqui
   useEffect(()=>{
@@ -30,10 +31,27 @@ export default () => {
     loadAll();
   }, []);
 
+  //Monitorar o scroll para mudar header para preto
+  useEffect(()=>{
+    const scrollListener = () => {
+      if(window.scrollY > 10) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener);
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  }, []);
+
+
   return(
     <div className="page">
     
-      <Header />
+      <Header black={blackHeader} />
 
       {featuredData &&
         <FeaturedMovie item={featuredData} />

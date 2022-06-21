@@ -47,9 +47,9 @@
 }
 .featured--buttonAssistir, .featured--buttonMinhaLista {
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 12px 25px;
+    padding: 10px 25px;
     border-radius: 5px;
     text-decoration: none;
     margin-right: 10px;
@@ -59,7 +59,7 @@
     color: black;
 }
 .featured--buttonMinhaLista{
-    background-color: rgb(30, 30, 30, 0.7);
+    background-color: rgb(60, 60, 60, 0.8);
     color: white;
 }
 
