@@ -6,21 +6,22 @@
 }
 .movieRow--listarea{
     overflow-x: hidden;
-    padding-left: 30px;
+    padding-left: 27px;
 }
 .movieRow--list{
     width: 99999999999px;
 }
 .movieRow--item{
     display: inline-block;
-    width: 150px;
+    width: 230px;
 }
 .movieRow--item img{
     width: 100%;
-    transform: scale(0.9);
+    transform: scale(0.97);
     transition: all ease 0.3s;
+    border-radius: 5px;
 }
 .movieRow--item img:hover {
-    transform: scale(1);
+    transform: scale(1.015);
     cursor: pointer;
 }

@@ -16,7 +16,7 @@
     justify-content: center;
     padding-left: 30px;
     padding-bottom: 150px;
-    padding-top: 70px;
+    margin-top: -20px;
 }
 
 .featured--name {
@@ -38,8 +38,8 @@
 
 .featured--description {
     margin-top: 15px;
-    font-size: 20px;
-    max-width: 40%;
+    font-size: 16px;
+    max-width: 38%;
 }
 
 .featured--buttons {
