@@ -40,6 +40,11 @@
     margin-top: 15px;
     font-size: 16px;
     max-width: 38%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
 }
 
 .featured--buttons {
@@ -65,6 +70,16 @@
 
 .featured--buttonAssistir:hover, .featured--buttonMinhaLista:hover {
     opacity: 0.7;
+}
+
+.featured--classificacao {
+    width: 90px;
+    float: right;
+}
+.featured--retornar {
+    margin-top:-13px;
+    width: 60px;
+    float: right;
 }
 
 .featured--genres {

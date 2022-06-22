@@ -1,5 +1,7 @@
 import React from "react";
 import './FeaturedMovie.css';
+import imagemClassificacao from "../img/classificacao.png";
+import imagemRetornar from "../img/retornar.png";
 
 export default ({item}) => {
     //pegar a data de lançamento
@@ -30,6 +32,11 @@ export default ({item}) => {
                         <a href="" className="featured--buttonMinhaLista">+ Mais tarde vejo</a>
                     </div>
                     <div className="featured--genres"><strong>Gênero: </strong>{genres.join(', ')}</div>
+                    
+                    <div>
+                        <img className="featured--classificacao" src={imagemClassificacao}/>
+                        <img className="featured--retornar" src={imagemRetornar}/>
+                    </div>
                 </div>
             </div>
         </section>
