@@ -29,7 +29,7 @@
 
 ### 💻 Results
 
-<a href="https://clone-netflix-drab-nu.vercel.app/">--------------Vizualizar resultado atual--------------</a>
+<a href="https://clone-netflix-rickferreira.vercel.app/">--------------Vizualizar resultado atual--------------</a>
   
 <br>
   
