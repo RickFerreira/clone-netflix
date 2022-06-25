@@ -28,7 +28,8 @@
 
 ### 💻 Results
 
-<a href="https://clone-netflix-rickferreira.vercel.app/">--------------Vizualizar resultado atual--------------</a>
+<a href="https://clone-netflix-git-master-rickferreira.vercel.app/">--------------Vizualizar resultado atual--------------</a>
+<a href="https://clone-netflix-drab-nu.vercel.app/">--------------Caso não funcione use esse--------------</a>
 
 
   
